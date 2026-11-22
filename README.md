@@ -23,6 +23,7 @@
 - [docs/02-prototype.md](docs/02-prototype.md) … 3D試作の動かし方・測定結果・課題
 - [docs/03-sleep.md](docs/03-sleep.md) … 睡眠の個性(早起き・夜更かし・ショート/ロングスリーパー・昼寝好き)
 - [docs/04-economy.md](docs/04-economy.md) … コンビニ・食料品・お金・ポーズ
+- [docs/05-crime-and-police.md](docs/05-crime-and-police.md) … 家で寝る・マナー・犯罪・警察
 - [docs/ai_cpu/design.md](docs/ai_cpu/design.md) … ai_cpu の設計
 - [docs/decisions.md](docs/decisions.md) … 決めたことの記録
 - [docs/journal.md](docs/journal.md) … 作業履歴・試行錯誤
