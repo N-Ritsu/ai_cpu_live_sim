@@ -21,6 +21,7 @@
 - [docs/00-concept.md](docs/00-concept.md) … 何を作るか・まだ決めていないこと
 - [docs/01-architecture.md](docs/01-architecture.md) … 全体の作り・性能の考え方
 - [docs/02-prototype.md](docs/02-prototype.md) … 3D試作の動かし方・測定結果・課題
+- [docs/03-sleep.md](docs/03-sleep.md) … 睡眠の個性(早起き・夜更かし・ショート/ロングスリーパー・昼寝好き)
 - [docs/ai_cpu/design.md](docs/ai_cpu/design.md) … ai_cpu の設計
 - [docs/decisions.md](docs/decisions.md) … 決めたことの記録
 - [docs/journal.md](docs/journal.md) … 作業履歴・試行錯誤
