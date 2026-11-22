@@ -44,11 +44,22 @@
 ```ts
 // 毎回、ゲームが知覚を渡して、意図をもらう
 const intent = agent.update(perception, dtSec)
-// intent = { actionId: 'eat', startedAt, progress }
+// intent = { actionId: 'eat', startedAt, progress, engaged }
+
+// 目的地に着いたら、ゲームが「始めた」と伝える
+agent.engage()
 ```
 
 - **知覚**: 時刻、ゲーム固有の事実(`facts`)、近くの存在(`entities`)。
-- **意図**: 選んだ行動の id と進み具合。
+- **意図**: 選んだ行動の id、進み具合、始めているか(`engaged`)。
+
+### 「選ぶ」と「始める」を分ける(`requiresEngagement`)
+
+食事は酒場へ行かないと始まらない。最初の版では、行動を選んだ瞬間から時間と欲求の回復が進んでいたため、歩いている間に「食べ終わる」ことになり、村人の約75%が常に移動中で、欲求も尽きた(試作で発覚。[../journal.md](../journal.md))。
+
+そこで、行動に `requiresEngagement: true` をつけると、ゲームが `agent.engage()` を呼ぶまで、時間も欲求の回復も進まなくなった。`engageTimeoutSec`(標準150秒)待っても始められなければ、諦めて選び直す。歩く経路や到着の判定はゲーム側の仕事。
+
+注意: 村人が遠くて考える間隔が長いとき(スケジューラ参照)、`engage()` から次の `update` までの時間は、行動の時間に数えられる。最大でも考える間隔(3秒)程度の誤差。
 
 ## 村人が多いとき(スケジューラ)
 
