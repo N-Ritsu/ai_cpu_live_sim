@@ -75,6 +75,20 @@ agent.engage()
 | `ActionSpec.cooldownSec` | 一度終えてから、また選べるようになるまでの時間(昼寝を1日1回に、など) |
 | `AgentView.currentActionId` / `lastDone` | 条件・補正の関数から、いま続けている行動と、各行動を最後に終えた時刻が見える |
 
+## 持ち物(お金・アイテム)
+
+ゲームが意味を決める「持ち物」を、村人ごとに持たせられる。コンビニの買い物と賃金([../04-economy.md](../04-economy.md))で使った。
+
+| 仕組み | 内容 |
+| --- | --- |
+| `AgentConfig.resources` | 持ち物の初期値(例: `{ money: 800 }`) |
+| `Agent.getResources()` / `addResource(id, amount)` | 読み取りと、ゲーム側の出来事での増減。保存・復元できる |
+| `ActionSpec.costs` | 行動を始めるときに払う持ち物。足りないと、その行動は選べない。`requiresEngagement` の行動は、`engage()` を呼んだ時点で払う |
+| `ActionSpec.gains` | 行動を終えたときに手に入る持ち物。途中でやめると手に入らない |
+| `AgentView.resources` | 判断の関数から、持ち物が見える(「お金が少ないほど働きたい」などの補正に使う) |
+
+食べるときの食料品の消費も、`costs` で表している(`eat_onigiri` は `item.onigiri` を1個払う)。
+
 ## 村人が多いとき(スケジューラ)
 
 `AgentScheduler` が、村人ごとに「何秒ごとに考えさせるか」(近い→短い、遠い→長い)と、1回の呼び出しで考えさせる人数の上限を受け取り、順番待ちの長い村人から更新する。重い処理で全員が一斉に止まらないようにするための仕組み。
