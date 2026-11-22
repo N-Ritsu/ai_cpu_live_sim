@@ -25,6 +25,7 @@
 - [docs/04-economy.md](docs/04-economy.md) … コンビニ・食料品・お金・ポーズ
 - [docs/05-crime-and-police.md](docs/05-crime-and-police.md) … 家で寝る・マナー・犯罪・警察
 - [docs/06-feelings.md](docs/06-feelings.md) … 対人感情・説教・喧嘩・追い詰められた犯人・警察の収入
+- [docs/07-good-deeds.md](docs/07-good-deeds.md) … 良い行動(ゴミ拾い・寄付・贈り物・交換)・罰金と逮捕のばれ方
 - [docs/ai_cpu/design.md](docs/ai_cpu/design.md) … ai_cpu の設計
 - [docs/decisions.md](docs/decisions.md) … 決めたことの記録
 - [docs/journal.md](docs/journal.md) … 作業履歴・試行錯誤
