@@ -27,6 +27,7 @@
 - [docs/06-feelings.md](docs/06-feelings.md) … 対人感情・説教・喧嘩・追い詰められた犯人・警察の収入
 - [docs/07-good-deeds.md](docs/07-good-deeds.md) … 良い行動(ゴミ拾い・寄付・贈り物・交換)・罰金と逮捕のばれ方
 - [docs/08-jobs.md](docs/08-jobs.md) … 職業(会社員・畜産家・店員・フリーター・警官)・定員・給料・転職
+- [docs/09-layout-player-talk.md](docs/09-layout-player-talk.md) … 村の配置・プレイヤー(1人称・CPU と同じ行動)・対話
 - [docs/ai_cpu/design.md](docs/ai_cpu/design.md) … ai_cpu の設計
 - [docs/decisions.md](docs/decisions.md) … 決めたことの記録
 - [docs/journal.md](docs/journal.md) … 作業履歴・試行錯誤
