@@ -24,6 +24,7 @@
 - [docs/03-sleep.md](docs/03-sleep.md) … 睡眠の個性(早起き・夜更かし・ショート/ロングスリーパー・昼寝好き)
 - [docs/04-economy.md](docs/04-economy.md) … コンビニ・食料品・お金・ポーズ
 - [docs/05-crime-and-police.md](docs/05-crime-and-police.md) … 家で寝る・マナー・犯罪・警察
+- [docs/06-feelings.md](docs/06-feelings.md) … 対人感情・説教・喧嘩・追い詰められた犯人・警察の収入
 - [docs/ai_cpu/design.md](docs/ai_cpu/design.md) … ai_cpu の設計
 - [docs/decisions.md](docs/decisions.md) … 決めたことの記録
 - [docs/journal.md](docs/journal.md) … 作業履歴・試行錯誤

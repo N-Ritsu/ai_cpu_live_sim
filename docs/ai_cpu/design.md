@@ -75,6 +75,20 @@ agent.engage()
 | `ActionSpec.cooldownSec` | 一度終えてから、また選べるようになるまでの時間(昼寝を1日1回に、など) |
 | `AgentView.currentActionId` / `lastDone` | 条件・補正の関数から、いま続けている行動と、各行動を最後に終えた時刻が見える |
 
+## 対人感情・欲求の外部調整
+
+村人どうしの「好き嫌い」と、ゲームの出来事による欲求の増減([../06-feelings.md](../06-feelings.md))。
+
+| 仕組み | 内容 |
+| --- | --- |
+| `Agent.getRelation(id)` / `getRelations()` / `addRelation(id, delta)` | 他の人への感情(-1 の悪意〜+1 の好意)。保存・復元できる。何もなければ 0 |
+| `AgentView.relations` | 判断の関数から、感情が見える |
+| `Tuning.relationHalfLifeSec` | 感情が時間とともに薄れる半減期(秒)。0 なら薄れない |
+| `Agent.adjustNeed(id, delta)` | ゲームの出来事で、欲求を増減する(叱られて平静が下がる、など)。回復していく欲求(平静)は、減る速さを負にして表す |
+| `Agent.getPersonality()` | 性格の読み取り |
+
+感情の変わり方(何を見たら誰がどう思うか)は、ゲーム側の計算(`game/src/feelings.ts`)。ai_cpu は、数値を持つだけ。
+
 ## 行動の出来事(ゲームへの通知)
 
 行動の結果を世界に反映するのは、ゲームの仕事。そのきっかけとして、ai_cpu は出来事を溜めておき、ゲームが `Agent.drainEvents()` で取り出す(取り出すと空になる)。
