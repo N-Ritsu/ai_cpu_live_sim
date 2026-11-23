@@ -28,6 +28,7 @@
 - [docs/07-good-deeds.md](docs/07-good-deeds.md) … 良い行動(ゴミ拾い・寄付・贈り物・交換)・罰金と逮捕のばれ方
 - [docs/08-jobs.md](docs/08-jobs.md) … 職業(会社員・畜産家・店員・フリーター・警官)・定員・給料・転職
 - [docs/09-layout-player-talk.md](docs/09-layout-player-talk.md) … 村の配置・プレイヤー(1人称・CPU と同じ行動)・対話
+- [docs/12-housing.md](docs/12-housing.md) … 住まい(アパート・自分の家・大工小屋・大工)と、家の中の床
 - [docs/11-appearance.md](docs/11-appearance.md) … 村人の顔・髪・頭の形(人ごとに違う組み合わせ)
 - [docs/10-sfx-replacement.md](docs/10-sfx-replacement.md) … 効果音を、効果音ラボの音に差し替える(割り当て済みと、足りない音)
 - [docs/ai_cpu/design.md](docs/ai_cpu/design.md) … ai_cpu の設計
